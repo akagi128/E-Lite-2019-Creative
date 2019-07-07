@@ -1,0 +1,356 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+
+
+
+/* Cursor Props */
+
+.cursor {
+    z-index: 1;
+    width: 90px;
+    height: 90px;
+    opacity: .5;
+    position: absolute;
+    top: 250px;
+    left: 45%;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transition: .1s;
+    mix-blend-mode: difference;
+}
+
+/* Header */
+
+#header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    margin-top: 0px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: all .4s;
+}
+#header:hover {
+    background: blue;
+    z-index: 1;
+    position: fixed;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#header li {
+    position: relative;
+    left: 1000px;
+    display: inline;
+}
+#header li:before {
+content: '';
+display: inline-block;
+position: absolute;
+width: 0;
+top: 30px;
+opacity: 1;
+height: 3px;
+background: white;
+transition: width .3s;
+}
+
+#header li:hover::before {
+      width: 100%;
+    }
+
+#header a {
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+
+
+#kingspan1 {
+   
+    color: white;
+    font-size: 7.5em;
+    position: relative;
+    top: 170px;
+    left: 14%;
+    font-family: 'Montserrat';
+    font-weight: 900;
+}
+
+#kingspan2 {
+    background-image: url('Neon Life.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    font-size: 6em;
+    position: relative;
+    top: 170px;
+    left: 8%;
+    font-family: 'Montserrat';
+    font-weight: 900;
+}
+
+
+    
+.concept {
+    height: 2200px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+#prototype {
+    margin-left: 75px;
+    border: 1px solid black;
+    height: 750px;
+    position: relative;
+    top:250px;
+    width: 1200px;
+}
+
+.final-details {
+    position: relative;
+    top: 280px;
+    height: 625px;
+    width: 100%;
+}
+
+
+
+#intro {
+   line-height: 2em;
+    opacity: 0;
+    color: white;
+    padding: 25px;
+    font-family: 'Montserrat' , 'Varela Round';
+    font-weight: bold;
+    font-size: 1.5em;
+    position: relative;
+    top: 375px;
+    margin-left: 75px;
+    height: 500px;
+    width: 600px;
+    max-width: 600px;
+    transition: all .3s;
+    border: 1px solid white;
+}
+#intro:hover {
+    line-height: 2em;
+     opacity: 0;
+     color: white;
+     padding: 25px;
+     font-family: 'Montserrat';
+     font-weight: bold;
+     font-size: 1.5em;
+     position: relative;
+     top: 360px;
+     margin-left: 75px;
+     height: 500px;
+     width: 600px;
+     border: 1px solid white;
+ }
+
+ #img {
+   opacity: 0;
+    background: url('hotel.jpg') no-repeat center;
+    background-size: cover;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    position: relative; 
+    left: 870px;
+    top: -80px;
+    transition: all .2s;
+ }
+ #img:hover {
+    opacity: 0;
+     background: url('hotel.jpg') no-repeat center;
+     background-size: cover;
+     height: 350px;
+     width: 350px;
+     border-radius: 50%;
+     position: relative; 
+     left: 870px;
+     top: -90px;
+     transition: all .2s;
+  }
+ #img1 {
+
+   background: url('hotel2.jpg') no-repeat center;
+   background-size: cover;
+   height: 350;
+   width: 350px;
+   border-radius:50%; 
+   position:relative; 
+   top: -540px;
+   left:950px;
+   z-index: -1; 
+   transition: all .4s;
+}
+
+
+ #intro2 {
+    line-height: 2em;
+     color: white;
+     padding: 25px;
+     font-family: 'Montserrat';
+     font-weight: bold;
+     font-size: 1.5em;
+     position: relative;
+     margin-top: 500px;
+     margin-left: 620px;
+     height: 500px;
+     width: 600px;
+     transition: all .3s;
+     border: 1px solid white;
+ }
+ #intro2:hover {
+    line-height: 2em;
+     color: white;
+     padding: 25px;
+     font-family: 'Montserrat';
+     font-weight: bold;
+     font-size: 1.5em;
+     position: relative;
+     margin-top: 490px;
+     margin-left: 620px;
+     height: 500px;
+     width: 600px;
+     border: 1px solid white;
+ }
+
+#choice {
+    color: white;
+    height: 552px;
+    width: 500px;
+    position: relative;
+    left: 75px;
+    top: -550px;
+    border: 1px solid white;
+    transition: all .2s;
+}
+#choice:hover {
+    color: white;
+    height: 552px;
+    width: 500px;
+    position: relative;
+    left: 75px;
+    top: -565px;
+    border: 1px solid white;
+    transition: all .2s;
+}
+
+
+#chimage1 {
+    height: 200px; 
+    width: 200px; 
+    position: relative; 
+    top: 80px;
+    left: -70px;
+    transition: all .4s; 
+}
+
+#chimage2 {
+    position: relative;
+    top: 120px;
+    left: 140px; 
+    height: 200px; 
+    width: 200px;
+}
+
+#color-change::after {
+    content: '';
+    display: block;
+    width: 0;
+    opacity: 1;
+    height: 3px;
+    background: blue;
+    transition: width .3s;
+}
+
+#color-change:hover::after {
+    width: 85%;
+    transform: none;
+    transition: width .3s;
+  }
+
+  #color-change-2::after {
+    content: '';
+    display: block;
+    width: 0;
+    opacity: 1;
+    height: 3px;
+    background: blue;
+    transition: width .3s;
+}
+
+#color-change-2:hover::after {
+    width: 40%;
+    transform: none;
+    transiti
+    on: width .3s;
+  }
+#fin {
+    position: relative;
+    top: 110px;
+    left: 10%;
+    height: 400px;
+    width: 750px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#fin1 {
+position: relative;
+margin-top: -292px;
+left: 67%;
+box-shadow: 7px 10px 28px -23px rgba(0,0,0,0.75);
+height: 401px;
+width:350px;
+background: linear-gradient(to left , #00c6ff , #0072ff); 
+}
+
+#endform {
+    color: white;
+    font-family: 'Varela Round';
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+/* Scrollbar */ 
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+    background: blue; 
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all .1s;
+  }
+
+ /* Media Queries */
+ @media only screen and (max-width: 600px) {
+    #intro {
+        width: 300px;
+        font-size: 1em;
+    }
+
+  }

@@ -1,0 +1,90 @@
+<html>
+<body> 
+        <div id = "cursor" class = "cursor"></div>
+<head>
+    <link href = "style1.css" rel = "stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+
+  <script>
+          window.onscroll = function() {myFunction()};
+
+function myFunction() {
+
+  if (document.body.scrollTop == 0 || document.documentElement.scrollTop == 0) {
+     document.getElementById("testimonial").setAttribute("class" , "animated fadeIn delay-1s");
+     document.getElementById("a1").setAttribute("style" , "color:black;");
+     document.getElementById("a2").setAttribute("style" , "color:black;");
+  } 
+
+    if (document.body.scrollTop >= 520 || document.documentElement.scrollTop >= 520) {
+     document.getElementById("testimonial").setAttribute("class" , "animated fadeIn");
+     document.getElementById("a1").setAttribute("style" , "color:white;");
+     document.getElementById("a2").setAttribute("style" , "color:white;");
+     document.getElementById("exp1").setAttribute("class" , "animated fadeInUp delay-1s");
+     document.getElementById("scrollline").setAttribute("class" , "animated fadeInUp delay-1s");
+     document.getElementById("scrollline2").setAttribute("class" , "animated fadeInUp delay-2s");
+     document.getElementById("dor").setAttribute("class" , "animated fadeInUp delay-2s");
+     document.getElementById("exp2").setAttribute("class" , "animated fadeIn delay-3s");
+     document.getElementById("raj").setAttribute("class" , "animated fadeIn delay-4s");
+  } 
+  if (document.body.scrollTop >= 900 || document.documentElement.scrollTop >= 900) {
+    document.getElementById("scrollline3").setAttribute("class" , "animated fadeInUp");
+    document.getElementById("exp3").setAttribute("class" , "animated fadeIn delay-1s");
+    document.getElementById("olive").setAttribute("class" , "animated fadeIn delay-2s");
+  } 
+  if (document.body.scrollTop >= 1750 || document.documentElement.scrollTop >= 1750) {
+    document.getElementById("a1").setAttribute("style" , "color:black;");
+     document.getElementById("a2").setAttribute("style" , "color:black;");
+     document.getElementById("fb").setAttribute("class" , "animated fadeInUp");
+     document.getElementById("twitter").setAttribute("class" , "animated fadeInUp delay-1s");
+     document.getElementById("imgfb").setAttribute("class" , "animated fadeInUp delay-2s");
+     document.getElementById("imgtwit").setAttribute("class" , "animated fadeInUp delay-3s");
+     document.getElementById("span1").setAttribute("class" , "animated fadeInUp delay-4s");
+     document.getElementById("span2").setAttribute("class" , "animated fadeInUp delay-5s");
+     document.getElementsByClassName("cursor").setAttribute("style" , "background: blue;"); 
+  } 
+}
+  </script>
+    <script>
+        const cursor = document.querySelector('.cursor');
+document.body.addEventListener('mousemove', e => {
+ cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px; transition: .3s ease-out;");
+})
+
+ </script>
+ <header id = "header">
+        <ul>
+          <a id="a1" class = "animated fadeIn" href = "homepage.htm"><li>Home</li></a>
+          <a id="a2" class = "animated fadeIn delay-1s" href = "testimonials.htm"><li>Testimonials</li></a>
+        </ul>
+      </header>
+
+ <div id = "main section">
+ <span id = "testimonials" class="animated fadeIn">TESTIMONIALS</span>
+ <span id = "testimonials1" class="animated fadeIn">TESTIMONIALS</span>
+ <img src = "arrow-down.svg" class="animated fadeIn" style="height: 50px; width: 50px; position: relative; color: blue; top: 300px; left: -300px;"></img>
+  </div>
+
+  <div id = "testimonial">
+    <div id = "scrollline" style="opacity: 0; height: 40px; width: 6.5px; position: relative; left: 60px; top: 128px; background: #ccf381;"></div>
+      <div id = "test1"><span id = "exp1" style="opacity: 0; font-size: 1.8em;">"A really exhilirating experience , worth every penny spent for this space hotel trip and stay" <br><br> <span id = "dor" style="opacity: 0; font-weight: 900;">- Mr. Dorian , a 4d/3n client</span></span></div>
+      <div id = "scrollline2" style="height: 40px; width: 6.5px; position: relative; left: 700px; top: -110px; background: #ccf381;"></div>
+      <div id = "test2"><span id = "exp2" style="font-size: 1.8em;">"A one-stop resort for a space enthusiast like me . The trip went on without any hassles ." </span><br><br><br><span style = "font-weight: 900; font-size: 1.8em;" id="raj">- Mr. Raj Koothrapalli, a 6d/5n client</span></div>
+      <div id = "scrollline3" style="height: 40px; opacity: 0; width: 6.5px; position: relative; left: 60px; top: 60px; background: #ccf381;"></div><div id = "bigtest3"><span id = "exp3" style="font-size: 1.5em; opacity: 0;">" I booked a 2d/1n trip last year , when I thought I should try something different for holiday season . I was extremely surprised to see the prices . Next up , is the trip to the hotel . The vehicle was a space capsule , which transported us to the hotel . The trip was smooth , and fast . It was a 1.5 hour journey . But another cool thing about this is , that the design of the commercial capsule and the hotel was similar . The interiors were quite beautiful , plus the view of earth and moon .  Next day , we went to a zero-gravity lounge Gravmos , and sure that was super-fun . Rest assured , this trip was nostalgic . "<span id = "olive" style="font-size: 1.3em;"><br><br>- John Oliver , a 2d/1n client</span></span></div>
+  </div>
+
+  <div id = "section2">
+  <div id = "fb"><img id = "imgfb" src="twitter.png" style=" opacity: 0; position: relative; left: 150px; top: 50px; height: 100px; width: 100px;"></img><span id = "span1" style="position: relative; top: 120px; left: 5px; color: white; font-size: .6em;">Sed porttitor lectus nibh. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit</span></div>
+  <div id = "twitter"><img id = "imgtwit" src="fb.svg" style=" opacity: 0; position: relative; left: 150px; top: 50px; height: 100px; width: 100px;"></img><span id = "span2" style="position: relative; top: 120px; left: 5px; font-size: .6em; color: black;">Sed porttitor lectus nibh. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit</span></div>
+  </div>
+
+  <div id = "footer">
+  </div>
+
+</body>
+</html>

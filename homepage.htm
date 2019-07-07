@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<body>
+    <head>
+<link href = "style.css" rel = "stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+
+
+    <div class = "cursor"></div>
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+function myFunction() {
+
+  if (document.body.scrollTop == 0 || document.documentElement.scrollTop == 0) {
+    document.getElementById("a1").setAttribute("style" , "color: white;");
+    document.getElementById("a2").setAttribute("style" , "color: white;");
+         document.getElementById("header").setAttribute("style" , "background: none;");
+  } 
+
+
+
+  if (document.body.scrollTop >= 2400 || document.documentElement.scrollTop >= 2400) {
+    document.body.setAttribute("style" , "background-color: whitesmoke; transition: 1s ease-out;");
+    document.getElementById("kingspan1").setAttribute("style" , "color: blue;");
+    document.getElementById("a1").setAttribute("style" , "color: white;");
+    document.getElementById("a2").setAttribute("style" , "color: white;");
+    document.getElementById("header").setAttribute("style" , "border-bottom-color: black;");
+    document.getElementById("kingspan2").setAttribute("style" , "background-image: none;  -webkit-text-fill-color: transparent; -webkit-text-stroke: 2px blue;");
+    document.getElementById("intro").setAttribute("style" , "border: 1px solid grey; color: black;");
+    document.getElementById("intro2").setAttribute("style" , "border: 1px solid grey; color: black;");
+    document.getElementById("prototype").setAttribute("class" , "animated fadeInUp");
+    document.getElementById("choice").setAttribute("style" , "border: 1px solid black; color : black;")
+    document.getElementById("costcalc").setAttribute("style" , "border: 1px solid grey; color: black;");
+    document.getElementById("text1").setAttribute("style" , "position: relative; font-size: 1.3em; top: 50px; color: black; font-family: 'Montserrat'; font-weight: 900;");
+    document.getElementById("text3").setAttribute("style" , "color:black; font-family: 'Montserrat'; font-weight: 900; font-size: 1.3em; margin-top: 45px;");
+   
+  } 
+
+
+
+
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  document.getElementById("intro").setAttribute("class" , "animated fadeInUp");
+  document.getElementById("img").setAttribute("class" , "animated fadeInUp delay-1s");
+  document.getElementById("img1").setAttribute("class" , "animated fadeInUp delay-2s");
+  document.getElementById("kingspan3").setAttribute("class" , "animated fadeIn delay-2s");
+
+ 
+  }
+
+  if (document.body.scrollTop >= 3700 || document.documentElement.scrollTop >= 3700) {
+     document.getElementById("kingspan5").setAttribute("class" , "animated fadeInUp");
+  }
+
+  if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
+    document.getElementById("intro2").setAttribute("class" , "animated fadeInUp");
+    document.getElementById("choice").setAttribute("class" , "animated fadeInUp delay-1s");
+    document.getElementById("kingspan4").setAttribute("class" , "animated fadeInUp delay-1s");
+    document.getElementById("text").setAttribute("class" , "animated fadeInUp delay-2s");
+    document.getElementById("chimage1").setAttribute("class" , "animated fadeInUp delay-3s");
+    document.getElementById("chimage2").setAttribute("class" , "animated fadeInUp delay-4s");
+  } 
+
+   
+}
+</script>
+<script>
+$(document).ready(function(){
+  $("#intro").mouseenter(function(){
+    $("#color-change").css("color" , "blue");
+  });
+  $("#intro").mouseleave(function(){
+    $("#color-change").css("color" , "rgba(0,151,255,0.6)");
+  });
+  $("#intro2").mouseenter(function(){
+    $("#color-change-2").css("color" , "blue");
+  });
+  $("#intro2").mouseleave(function(){
+    $("#color-change-2").css("color" , "rgba(0,151,255,0.6)");
+  });
+  $("#choice").mouseenter(function(){
+    $("#big-text").css({"-webkit-text-fill-color": "transparent" , "-webkit-text-stroke": "2px blue" , "position": "relative" , "top": "-150px" , "font-size": "2em" , "left": "135px" , "font-family": "Montserrat" , "font-weight": "900" , "transition": "all 1s"});
+  });
+  $("#choice").mouseleave(function(){
+    $("#big-text").css({"position": "relative" , "top": "-150px" , "font-size": "2em" , "left": "135px" , "font-family": "Montserrat" , "font-weight": "900" , "transition": "all 1s" , "color" : "blue"});
+  });
+
+});
+
+</script>
+    <script>
+           const cursor = document.querySelector('.cursor');
+document.body.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 30)+"px; left: "+(e.pageX - 10)+"px; transition: .3s ease-out;")
+})
+
+    </script>
+
+<header id = "header">
+  <ul>
+    <a id="a1" class = "animated fadeIn" href = "homepage.htm"><li>Home</li></a>
+    <a id="a2" class = "animated fadeIn delay-1s" href = "testimonials.htm"><li>Testimonials</li></a>
+  </ul>
+</header>
+
+<div class = "concept">           
+<span id = "kingspan1" class = "animated fadeInUp">Arrive Curious .</span><br><span id = "kingspan2" class = "animated fadeIn delay-2s"> Return Flabbergasted .</span>
+<div id = "intro"><span id = "kingspan3"><span id = "color-change" style = "font-size: 1.6em; transition: all .4s; font-weight: 900;">" The Average Joe experiences life in space "</span> <span style= " position: relative; top: 50px; font-family: 'Varela Round';">Presenting<span style = "color: blue;"> Cosmo Inn &#8482</span> by Space Origin . <br>Cosmo Inn promises to give you a vacation like never-before . Your best affordable holiday is just a few clicks away . Come and experience the joy of living in space . </span></span></div>
+<div id = "img"></div>
+<div id = "img1"></div>
+<div id = "intro2"><span id = "kingspan4"><span id = "color-change-2" style="font-size: 1.6em; transition: .4s;"> " The Edge " </span><p id = "text" style=" position: relative; top: 25px; font-family: 'Varela Round';">Your current holiday plans include checking out many hotels , vacation places , travel ticket prices , etc .<br>
+  The Cosmo Inn trip offers you a no-sweat vacation , as it offers one destination and one price (special offers for those who book first) . <br> The most basic advantage of this trip is shown in the left box .
+</span></div>
+<div id = "choice">
+  <span id = "big-text" style="position: relative; top: -150px; font-size: 2em; left: 135px;font-family: 'Montserrat'; font-weight: 900; color: blue; transition: all 1s;">Your Choice</span>
+<img id = "chimage1" src="hotel3.jpg"></img>
+<span style="position: relative; top: 115px; left: -200px; font-family: 'Montserrat'; font-size: 2em; font-weight: 900; color: white; ">Or</span>
+<img id = "chimage2" src = "hotel4.jpg"></img>
+</div>
+</div>
+
+
+<div id = "prototype">
+  <iframe width="1200" height="750" src="https://www.youtube.com/embed/J1xICWgciHE">
+  </iframe>
+</div>
+
+<div class = "final-details">
+    <span id = "kingspan5" style=" position: relative; top: 50px; font-family: 'Montserrat'; font-weight: 900; color: blue; letter-spacing: .4em; font-size: 3em; left: 120px;">Getting down to Business . </span>
+    <div id = "fin" class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true , "autoPlay": true , "accessibility": false }'>
+     <img src = "hotel5.jpg" class="carousel-cell" style="height: 100%; width: 100%;"></img>
+     <img src = "hotel6.jpg" class="carousel-cell" style="height: 100%; width: 100%;"></img>
+     <img src = "hotel7.jpg" class="carousel-cell" style="height: 100%; width: 100%;"></img>
+     <img src = "hotel8.jpg" class="carousel-cell" style="height: 100%; width: 100%;"></img>
+    </div>
+    <div id = "fin1">
+      <form method = "POST" id = "endform">
+        Enter Number of passengers:
+        <br><br>
+        <input type="number" id="pass" value="" style="height: 25px;">
+        <br><br>
+        Enter Number of Days/Nights:
+        <br><br>
+        <input type="number" id="pass1" value="" style="height: 25px;">
+        <br><br>
+        <input type="button" value="Submit" id="submit">
+    </form>
+    <div id = "totalprice"
+     style="position: relative; top: 60px; transition: all .4s; left: 80px; color: white; font-weight: 900;font-size: 1.2em; font-family: 'Montserrat'; height: 45px; width: 150px;">
+    </div>
+  </div>
+</div>
+<script>
+    document.getElementById("submit").onclick = function() {submit()};
+  
+    function submit() {
+      var passnumb = document.getElementById("pass").value;
+      var daynite = document.getElementById("pass1").value;
+      var total = passnumb*50 + daynite*50 + 5;
+      document.getElementById("totalprice").innerText = "Your total cost for this vacation is $"+total;
+    }
+  </script>
+
+</body>
+</html>
